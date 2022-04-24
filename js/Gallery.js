@@ -3,19 +3,8 @@ $(document).ready(function() {
 });
 
 function Cocina() {
-    var folder = "assets/img/Cocina";
-    while (document.getElementById("Cocina")) {
-        document.getElementById("Cocina").remove();
-    }
-    while (document.getElementById("Baño")) {
-        document.getElementById("Baño").remove();
-    }
-    while (document.getElementById("Exterior")) {
-        document.getElementById("Exterior").remove();
-    }
-    while (document.getElementById("Interior")) {
-        document.getElementById("Interior").remove();
-    }
+    var folder = "../assets/img/Cocina";
+    limpiar();
 
     $.ajax({
         url: folder,
@@ -31,19 +20,8 @@ function Cocina() {
 }
 
 function Baño() {
-    var folder = "assets/img/Baño";
-    while (document.getElementById("Exterior")) {
-        document.getElementById("Exterior").remove();
-    }
-    while (document.getElementById("Interior")) {
-        document.getElementById("Interior").remove();
-    }
-    while (document.getElementById("Cocina")) {
-        document.getElementById("Cocina").remove();
-    }
-    while (document.getElementById("Baño")) {
-        document.getElementById("Baño").remove();
-    }
+    var folder = "../assets/img/Baño";
+    limpiar();
 
     $.ajax({
         url: folder,
@@ -58,20 +36,8 @@ function Baño() {
 }
 
 function Exterior() {
-    var folder = "assets/img/Exterior";
-    while (document.getElementById("Interior")) {
-        document.getElementById("Interior").remove();
-    }
-    while (document.getElementById("Cocina")) {
-        document.getElementById("Cocina").remove();
-    }
-    while (document.getElementById("Baño")) {
-        document.getElementById("Baño").remove();
-    }
-    while (document.getElementById("Exterior")) {
-        document.getElementById("Exterior").remove();
-    }
-
+    var folder = "../assets/img/Exterior";
+    limpiar();
 
     $.ajax({
         url: folder,
@@ -87,19 +53,8 @@ function Exterior() {
 }
 
 function Interior() {
-    var folder = "assets/img/Interior";
-    while (document.getElementById("Cocina")) {
-        document.getElementById("Cocina").remove();
-    }
-    while (document.getElementById("Baño")) {
-        document.getElementById("Baño").remove();
-    }
-    while (document.getElementById("Exterior")) {
-        document.getElementById("Exterior").remove();
-    }
-    while (document.getElementById("Interior")) {
-        document.getElementById("Interior").remove();
-    }
+    var folder = "../assets/img/Interior";
+    limpiar();
 
     $.ajax({
         url: folder,
@@ -112,4 +67,19 @@ function Interior() {
             });
         }
     });
+}
+
+function limpiar() {
+    while (document.getElementById("Cocina")) {
+        document.getElementById("Cocina").remove();
+    }
+    while (document.getElementById("Baño")) {
+        document.getElementById("Baño").remove();
+    }
+    while (document.getElementById("Exterior")) {
+        document.getElementById("Exterior").remove();
+    }
+    while (document.getElementById("Interior")) {
+        document.getElementById("Interior").remove();
+    }
 }

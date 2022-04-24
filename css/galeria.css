@@ -89,7 +89,7 @@ body {
 
 .shadow {
     border-radius: 15px;
-    filter: drop-shadow(0 0 .5rem black);
+    filter: drop-shadow(0 0 .3rem black);
     transition: 0.75s;
 }
 

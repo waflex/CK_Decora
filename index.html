@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- META -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="decora,decoracion,construccion,constructora,interiores,interior,exteriores,exterior,baños,baño,">
     <title>CK DECORA</title>
     <!-- IMPORTS -->
     <!-- Bootstrap -->
@@ -17,13 +19,21 @@
     />
     <!-- Custom -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
     <header>
         <div class="container-fluid">
             <div class="row mt-2 mx-auto">
-                <img src="assets/img/Logo.jpg" class="rounded mx-auto d-block w-50" alt="logo" height="300" />
+                <a href="index.html">
+                    <img src="assets/img/Logo.jpg" class="rounded mx-auto d-block w-50" alt="logo" height="300" />
+                </a>
             </div>
         </div>
     </header>
@@ -60,7 +70,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/img/500x500.png" height="500" class="d-block w-100" alt="...">
+                        <img src="assets/img/Baño/Baño Ref - copia (2).jpg" height="500" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Descubre nuestra galeria</h5>
                             <p>Te invitamos a dar una vuelta por las imagenes de nuestros proyectos</p>
@@ -96,6 +106,7 @@
                 </button>
             </div>
             <br>
+            <hr>
             <div class="row h-50">
                 <div class="col">
                     <img src="assets/utils/interview.png" class="image" alt="" srcset="">
@@ -111,9 +122,36 @@
                     </p>
                 </div>
             </div>
-
         </div>
     </main>
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>Sobre Nosotros</h6>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptas nihil quibusdam. Harum, corporis quae! Corporis nulla, fugit, tempore dignissimos quia error doloremque vero et veniam maiores cumque architecto libero.</p>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2022 Developed by JFRTDEV
+                            <a href="https://github.com/waflex" target="blank">Github</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
 </body>
 
 </html>

@@ -3,10 +3,6 @@ body {
     font-family: 'rubik' !important;
 }
 
-.w-50 {
-    width: 50% !important;
-}
-
 .hover {
     text-decoration: none;
     color: white;
@@ -57,10 +53,7 @@ body {
 
 @media (max-width: 365px) {
     .image {
-        max-width: 270px !important;
-        max-height: 250px !important;
-    }
-    .w-50 {
-        width: 125% !important;
+        max-width: 300px !important;
+        max-height: 300px !important;
     }
 }
