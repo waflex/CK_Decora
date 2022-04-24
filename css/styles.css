@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+body {
+    font-family: 'rubik' !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.hover {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.justificar-texto {
+    text-align: justify;
+}
+
+.hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.btn-outline-info {
+    color: orange !important;
+    border-color: orange !important;
+}
+
+.btn-outline-info:hover {
+    color: white !important;
+    background-color: orange !important;
+}
+
+.hover:hover {
+    color: orange !important;
+}
+
+.hover:hover::after {
+    color: orange;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.image {
+    max-width: 550px !important;
+    max-height: 380px !important;
+}
+
+@media (max-width: 365px) {
+    .image {
+        max-width: 270px !important;
+        max-height: 250px !important;
+    }
+    .w-50 {
+        width: 125% !important;
+    }
+}
