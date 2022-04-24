@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function Cocina() {
-    var folder = "https://github.com/waflex/CK_Decora/tree/gh-pages/assets/img/Cocina/?files=1";
+    var folder = "../assets/img/Cocina/?files=1";
     limpiar();
 
     $.ajax({
@@ -20,7 +20,7 @@ function Cocina() {
 }
 
 function Baño() {
-    var folder = "https://github.com/waflex/CK_Decora/tree/gh-pages/assets/img/Baño/?files=1";
+    var folder = "../assets/img/Baño/?files=1";
     limpiar();
 
     $.ajax({
@@ -36,7 +36,7 @@ function Baño() {
 }
 
 function Exterior() {
-    var folder = "https://github.com/waflex/CK_Decora/tree/gh-pages/assets/img/Exterior/?files=1";
+    var folder = "../assets/img/Exterior/?files=1";
     limpiar();
 
     $.ajax({
@@ -53,7 +53,7 @@ function Exterior() {
 }
 
 function Interior() {
-    var folder = "https://github.com/waflex/CK_Decora/tree/gh-pages/assets/img/Interior/?files=1";
+    var folder = "../assets/img/Interior/?files=1";
     limpiar();
 
     $.ajax({
