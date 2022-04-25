@@ -57,3 +57,16 @@ body {
         max-height: 300px !important;
     }
 }
+
+.carousel-caption p {
+    text-shadow: 0 0 3px white;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+carousel-indicators
+/*, .carousel-indicators */
+
+{
+    filter: invert(100%);
+}
