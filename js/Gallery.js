@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function Cocina() {
-    var folder = "https://api.github.com/repositories/484252097/contents/assets/img/Ba%C3%B1o";
+    var folder = "../assets/img/Cocina";
     limpiar();
 
     $.ajax({
@@ -20,7 +20,7 @@ function Cocina() {
 }
 
 function Baño() {
-    var folder = "../assets/img/Baño/?files=1";
+    var folder = "../assets/img/Baño";
     limpiar();
 
     $.ajax({
@@ -36,7 +36,7 @@ function Baño() {
 }
 
 function Exterior() {
-    var folder = "../assets/img/Exterior/?files=1";
+    var folder = "../assets/img/Exterior";
     limpiar();
 
     $.ajax({
@@ -53,7 +53,7 @@ function Exterior() {
 }
 
 function Interior() {
-    var folder = "../assets/img/Interior/?files=1";
+    var folder = "../assets/img/Interior";
     limpiar();
 
     $.ajax({
