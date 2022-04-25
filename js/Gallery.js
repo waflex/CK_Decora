@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 function Cocina() {
-    var folder = "../assets/img/Cocina/?files=1";
+    var folder = "https://api.github.com/repositories/484252097/contents/assets/img/Ba%C3%B1o";
     limpiar();
 
     $.ajax({

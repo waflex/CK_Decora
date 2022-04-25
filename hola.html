@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        body {}
+        
+        .li {
+            transition: height .5s ease-in;
+            overflow: hidden;
+            height: 3ch;
+        }
+        
+        .li.active {
+            height: 200px;
+        }
+        
+        .li div {
+            height: 0;
+            overflow: scroll;
+            transition: height .75s ease-in;
+            transition-delay: .25s;
+            padding: 0 1ch;
+            border-radius: 1ch;
+            background-color: #00000011;
+        }
+        
+        .li.active div {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>h5bp/html5-boilerplate</h1>
+    <div id="ul">
+        <template>
+                <div class="li">
+                    <span></span>
+                    <div></div>
+                </div>
+            </template>
+    </div>
+</body>
+
+</html>
