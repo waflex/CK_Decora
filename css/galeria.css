@@ -98,8 +98,10 @@ body {
 }
 
 .shadow:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     filter: drop-shadow(0 0 .3rem gray);
+    border: 10px;
+    border-color: gray;
     border-radius: 0;
     z-index: 2;
 }
