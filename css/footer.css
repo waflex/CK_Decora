@@ -142,7 +142,8 @@
 }
 
 .social-icons a.facebook:hover {
-    background-color: orange
+    margin: auto !important;
+    background-color: orange;
 }
 
 .social-icons a.twitter:hover {
