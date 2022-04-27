@@ -56,7 +56,7 @@ body {
     max-height: 380px !important;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     .image {
         max-width: 300px !important;
         max-height: 300px !important;
