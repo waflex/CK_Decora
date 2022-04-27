@@ -27,10 +27,10 @@
 
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row mt-2 mx-auto">
-                <a href="index.html">
-                    <img src="assets/img/Logo.jpg" class="rounded mx-auto d-block w-50" alt="logo" height="300" />
+        <div class="container-fluid p-2">
+            <div class="row mt-2 mx-auto h-50">
+                <a href="index.html" class="my-auto">
+                    <img src="assets/img/Logo.jpg" class="rounded mx-auto d-block logo w-50 my-auto" alt="logo" />
                 </a>
             </div>
         </div>
@@ -63,7 +63,8 @@
                         <h3 class="mb-4">Envianos un Mensaje</h3>
                         <form method="POST" id="contactForm" name="contactForm" class="contactForm" action="https://formsubmit.co/wafle48@gmail.com">
                             <!-- Cambiar correo y redireccion // arriba y abajo -->
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                            <input type="hidden" name="_next" value="contacto.html">
+                            <input type="hidden" name="_captcha" value="false">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
@@ -111,7 +112,7 @@
                                 <span class="fa fa-paper-plane"></span>
                             </div>
                             <div class="text pl-3">
-                                <p class="my-auto"><span>Email:</span><br> <a href="mailto:ckdecoracionyconstruccion@gmail.com">ckdecoracionyconstruccion@gmail.com</a></p>
+                                <p class="my-auto"><span>Email:</span><a class="me-auto" href="mailto:ckdecora@gmail.com">ckdecora@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="dbox my-2 w-100 d-flex align-items-center">

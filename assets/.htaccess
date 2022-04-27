@@ -1,9 +1,0 @@
-#prevenir acceso a los archivos .htaccess
-
-<files .htaccess>
-
-order allow,deny
-
-allow from all
-
-</files>

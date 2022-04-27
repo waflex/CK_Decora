@@ -87,14 +87,14 @@ body {
     max-height: 250px;
 }
 
+.card {
+    border: none !important;
+}
+
 .shadow {
     border-radius: 15px;
     filter: drop-shadow(0 0 .3rem black);
     transition: 0.75s;
-}
-
-.card {
-    border: none !important;
 }
 
 .shadow:hover {
@@ -104,4 +104,10 @@ body {
     border-color: gray;
     border-radius: 0;
     z-index: 2;
+}
+
+@media (max-width:440px) {
+    .shadow:hover {
+        transform: scale(1.15)!important;
+    }
 }
