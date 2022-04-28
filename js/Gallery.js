@@ -15,7 +15,7 @@ function Cocina() {
             $(data).find("a").attr("href", function(i, val) {
                 if (val.match(/\.(jpe?g|png|gif)$/)) {
                     // val = "assets/img/Cocina/" + val;
-                    $(".fill").append("<div class='col my-2 justify-content-center' ID='Cocina'>" + "<div class='card h-50' style='width:18rem;'>" + "<img src='" + val + "' class='card-img-top shadow'>");
+                    $(".fill").append("<div class='col my-2 justify-content-center' ID='Cocina'>" + "<div class='card mx-auto mx-md-0 h-50' style='width:18rem;'>" + "<img src='" + val + "' class='card-img-top shadow'>");
                 }
             });
         }

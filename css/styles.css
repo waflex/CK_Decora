@@ -56,15 +56,23 @@ body {
     max-height: 380px !important;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .image {
         max-width: 300px !important;
         max-height: 300px !important;
     }
 }
 
-.carousel-caption p {
-    text-shadow: 0 0 3px white;
+@media (max-width: 550px) {
+    .image {
+        max-width: 400px !important;
+        max-height: 400px !important;
+    }
+}
+
+.carousel-caption * {
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
 }
 
 .carousel-control-next,
