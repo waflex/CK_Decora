@@ -57,6 +57,9 @@ body {
 }
 
 @media (max-width: 450px) {
+    .carousel-inner img {
+        height: 400px;
+    }
     .image {
         max-width: 300px !important;
         max-height: 300px !important;
@@ -64,6 +67,9 @@ body {
 }
 
 @media only screen and (min-width: 455px) and (max-width: 550px) {
+    .carousel-inner img {
+        height: 400px;
+    }
     .image {
         max-width: 400px !important;
         max-height: 400px !important;
