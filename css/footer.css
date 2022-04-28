@@ -1,5 +1,9 @@
 /* Footer */
 
+.text-justify {
+    text-align: justify;
+}
+
 .site-footer {
     background-color: #26272b;
     padding: 45px 0 20px;
@@ -142,7 +146,8 @@
 }
 
 .social-icons a.facebook:hover {
-    background-color: orange
+    margin: auto !important;
+    background-color: orange;
 }
 
 .social-icons a.twitter:hover {
@@ -153,7 +158,7 @@
     background-color: orange
 }
 
-.social-icons a.dribbble:hover {
+.social-icons a.instagram:hover {
     background-color: orange
 }
 
