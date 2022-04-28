@@ -63,7 +63,7 @@ body {
     }
 }
 
-@media (max-width: 550px) {
+@media only screen and (min-width: 455px) and (max-width: 550px) {
     .image {
         max-width: 400px !important;
         max-height: 400px !important;
@@ -75,11 +75,11 @@ body {
     text-shadow: 0 0 10px white;
 }
 
-.carousel-control-next,
-.carousel-control-prev,
-carousel-indicators
+
 /*, .carousel-indicators */
 
-{
+.carousel-control-next,
+.carousel-control-prev,
+carousel-indicators {
     filter: invert(100%);
 }
