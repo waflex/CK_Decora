@@ -1,8 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik');
+/* Importación de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap');
+
+/* Estilos base */
 body {
-    font-family: 'rubik' !important;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilos de navegación */
+.category-nav {
+    padding: 2rem 0;
+}
+
+.category-btn {
+    padding: 0.75rem 2rem;
+    border: 1px solid #333;
+    background: transparent;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #333;
+    color: #fff;
+}
+
+/* Estilos de la galería */
+.gallery-container {
+    padding: 2rem 0;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.card:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.image-overlay h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .card img {
+        height: 250px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .image-overlay {
+        padding: 1rem;
+    }
+
+    .image-overlay h3 {
+        font-size: 1rem;
+    }
+
+    .image-overlay p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos de navegación */
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover::after {
+    width: 80%;
+}
+
+.navbar .nav-link.active {
+    color: #000;
+}
+
+.navbar .nav-link.active::after {
+    width: 80%;
+}
 .bg-orange {
     background-color: orange;
 }

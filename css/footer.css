@@ -4,168 +4,194 @@
     text-align: justify;
 }
 
+/* Variables */
+:root {
+    --footer-bg: #1a1a1a;
+    --footer-text: #f5f5f5;
+    --footer-secondary: #a0a0a0;
+    --accent-color: #d4af37;
+    --transition: all 0.3s ease;
+}
+
+/* Estilos base del footer */
 .site-footer {
-    background-color: #26272b;
-    padding: 45px 0 20px;
-    font-size: 15px;
-    line-height: 24px;
-    color: #737373;
+    background-color: var(--footer-bg);
+    padding: 4rem 0 2rem;
+    color: var(--footer-text);
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    max-width: 100%;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.site-footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-footer .col-md-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+/* Ajuste de textos */
+.site-footer p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.text-justify {
+    text-align: justify;
+    max-width: 100%;
+    margin-right: 2rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    .site-footer .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .site-footer p,
+    .text-justify {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .site-footer .container {
+        padding: 0 1rem;
+    }
 }
 
 .site-footer hr {
-    border-top-color: #bbb;
-    opacity: 0.5
+    border-color: var(--footer-secondary);
+    opacity: 0.2;
+    margin: 2rem 0;
 }
 
-.site-footer hr.small {
-    margin: 20px 0
-}
-
+/* Títulos del footer */
 .site-footer h6 {
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 5px;
-    letter-spacing: 2px
+    color: var(--footer-text);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
+.site-footer h6::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+/* Enlaces del footer */
 .site-footer a {
-    color: #737373;
+    color: var(--footer-secondary);
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 .site-footer a:hover {
-    color: orange;
-    text-decoration: none;
+    color: var(--accent-color);
+    padding-left: 5px;
 }
 
+/* Lista de enlaces */
 .footer-links {
-    padding-left: 0;
-    list-style: none
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-links li {
-    display: block
+    padding: 0.5rem 0;
 }
 
-.footer-links a {
-    color: #737373
-}
-
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
-    color: #3366cc;
-    text-decoration: none;
-}
-
-.footer-links.inline li {
-    display: inline-block
-}
-
-.site-footer .social-icons {
-    text-align: right
-}
-
-.site-footer .social-icons a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 6px;
-    margin-right: 0;
-    border-radius: 100%;
-    background-color: #33353d
-}
-
-.copyright-text {
-    margin: 0
-}
-
-@media (max-width:991px) {
-    .site-footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width:767px) {
-    .site-footer {
-        padding-bottom: 0
-    }
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
-    }
-}
-
+/* Iconos sociales */
 .social-icons {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none
+    display: flex;
+    gap: 1rem;
+    list-style: none;  /* Elimina los puntos de la lista */
+    padding: 0;        /* Elimina el padding por defecto */
+    margin: 0;         /* Elimina el margen por defecto */
 }
 
 .social-icons li {
-    display: inline-block;
-    margin-bottom: 4px
-}
-
-.social-icons li.title {
-    margin-right: 15px;
-    text-transform: uppercase;
-    color: #96a2b2;
-    font-weight: 700;
-    font-size: 13px
+    margin: 0;         /* Elimina márgenes de los elementos li */
+    padding: 0;        /* Elimina padding de los elementos li */
 }
 
 .social-icons a {
-    background-color: #eceeef;
-    color: #818a91;
-    font-size: 16px;
-    display: inline-block;
-    line-height: 44px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    margin-right: 8px;
-    border-radius: 100%;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
 }
 
-.social-icons a:active,
-.social-icons a:focus,
 .social-icons a:hover {
-    color: #fff;
-    background-color: orange
+    background-color: var(--accent-color);
+    color: var(--footer-bg);
+    transform: translateY(-3px);
+    padding-left: 0;
 }
 
-.social-icons.size-sm a {
-    line-height: 34px;
-    height: 34px;
-    width: 34px;
-    font-size: 14px
+.social-icons i {
+    font-size: 1.2rem;
 }
 
-.social-icons a.facebook:hover {
-    margin: auto !important;
-    background-color: orange;
+/* Texto de copyright */
+.copyright-text {
+    color: var(--footer-secondary);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
-.social-icons a.twitter:hover {
-    background-color: orange
+.copyright-text a {
+    color: var(--accent-color);
 }
 
-.social-icons a.linkedin:hover {
-    background-color: orange
-}
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    .site-footer {
+        padding: 2rem 0;
+    }
 
-.social-icons a.instagram:hover {
-    background-color: orange
-}
+    .site-footer [class^=col-] {
+        margin-bottom: 2rem;
+    }
 
-@media (max-width:767px) {
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600
+    .site-footer .social-icons,
+    .site-footer .copyright-text {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .site-footer h6::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .site-footer h6,
+    .footer-links,
+    .text-justify {
+        text-align: center;
     }
 }

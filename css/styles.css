@@ -1,106 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik');
+
+:root {
+    --primary-font: 'Raleway', sans-serif;
+    --heading-font: 'Playfair Display', serif;
+}
+
 body {
-    font-family: 'rubik' !important;
+    font-family: var(--primary-font);
+    line-height: 1.6;
 }
 
-.hover {
-    text-decoration: none;
-    color: white;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+.navbar .nav-link {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
     position: relative;
+    padding: 0.5rem 1rem;
 }
 
-.justificar-texto {
-    text-align: justify;
-}
-
-.hover::after {
+.navbar .nav-link::after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: 0;
-    width: 100%;
+    left: 50%;
+    width: 0;
     height: 2px;
-    background-color: currentColor;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-in;
+    background: #000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
-.btn-outline-info {
-    color: orange !important;
-    border-color: orange !important;
+.navbar .nav-link:hover::after {
+    width: 80%;
 }
 
-.btn-outline-info:hover {
-    color: white !important;
-    background-color: orange !important;
+.hero-section .carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    max-width: 600px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
-.hover:hover {
-    color: orange !important;
+.services-section .card {
+    transition: transform 0.3s ease;
 }
 
-.hover:hover::after {
-    color: orange;
-    transform: scaleX(1);
-    transform-origin: left;
+.services-section .card:hover {
+    transform: translateY(-10px);
 }
 
-.logo {
-    width: 100%;
-    height: 50%;
+.social-links a {
+    transition: opacity 0.3s ease;
 }
 
-.image {
-    max-width: 550px !important;
-    max-height: 380px !important;
+.social-links a:hover {
+    opacity: 0.7;
 }
 
-@media (max-width: 450px) {
-    .carousel-caption h5 {
-        font-size: 18px;
-        margin-bottom: 5px;
-    }
-    .carousel-caption p {
-        font-weight: normal;
-        font-size: 15px;
-    }
-    .carousel-inner img {
-        height: 350px;
-    }
-    .image {
-        max-width: 300px !important;
-        max-height: 300px !important;
-    }
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-@media only screen and (min-width: 455px) and (max-width: 550px) {
-    .carousel-caption h5 {
-        font-size: 18px;
-    }
-    .carousel-caption p {
-        font-weight: normal;
-        font-size: 15px;
-    }
-    .carousel-inner img {
-        height: 400px;
-    }
-    .image {
-        max-width: 400px !important;
-        max-height: 400px !important;
-    }
-}
-
-.carousel-caption * {
-    font-weight: bold;
-    text-shadow: 0 0 10px white;
-}
-
-
-/*, .carousel-indicators */
-
-.carousel-control-next,
-.carousel-control-prev,
-carousel-indicators {
-    filter: invert(100%);
+.btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
 }
