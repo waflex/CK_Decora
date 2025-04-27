@@ -27,8 +27,8 @@ CK Decora is a specialized interior design and construction company that transfo
 
 ## 🌐 Live Websites
 
-- Production: [www.ckdecoracion.cl](http://www.ckdecoracion.cl)
-- Netlify: [ckdecora.netlify.app](https://ckdecora.netlify.app)
+- Production: [www.ckdecora.cl](http://www.ckdecora.cl)
+- Netlify: [ckdecora-landing.netlify.app](ckdecora-landing.netlify.app)
 
 ## 📱 Responsive Design
 
